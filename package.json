@@ -1,0 +1,22 @@
+{
+  "name": "giot",
+  "version": "1.0.0",
+  "description": "git config --global user.name \"GTodua23\"",
+  "main": "giotest.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GTodua23/giot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GTodua23/giot/issues"
+  },
+  "homepage": "https://github.com/GTodua23/giot#readme",
+  "devDependencies": {
+    "cypress": "^14.5.1"
+  }
+}
