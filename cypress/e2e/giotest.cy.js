@@ -3,7 +3,7 @@
      cy.visit('https://automationexercise.com/login')
      cy.get('.signup-form > h2').should("have.text", "New User Signup!")
      cy.get('[data-qa="signup-name"]').type("gio")
-     cy.get('[data-qa="signup-email"]').type("Gio23@gmail.com")
+     cy.get('[data-qa="signup-email"]').type("gIo23@gmail.com")
      cy.get('[data-qa="signup-button"]').click()
      cy.get('#id_gender1').check()        /*radio baTonze check-ic musaobs da click-ic(cy.get('#id_gender1').click())*/
      cy.get('[data-qa="password"]').type("Giogio23#")
@@ -25,7 +25,7 @@
      cy.get('[data-qa="create-account"]').click()
      cy.get('b').should("have.text", "Account Created!")
      cy.get('[data-qa="continue-button"]').click()
-     /*cy.get(':nth-child(10) > a').should("have.text", "Logged in as gio")*/
+     cy.get(':nth-child(10) > a').should ("contain","Logged in as gio")
      cy.get('.shop-menu > .nav > :nth-child(5) > a').click()
      cy.get('b').should("have.text", "Account Deleted!")
      cy.get('[data-qa="continue-button"]').click()
