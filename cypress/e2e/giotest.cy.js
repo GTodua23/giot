@@ -34,6 +34,8 @@
 
 
 
+ 
+
 describe('Test Case 2: Login User with correct email and password', () => {
   it('unda dalogindes swori iuzerit da parolit', () => {
     cy.visit('https://automationexercise.com/')
