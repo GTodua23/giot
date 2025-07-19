@@ -1,0 +1,24 @@
+{
+     "name": "gio",
+     "email":"Gio23+2@gmail.com",
+     "password":"Giogio23#",
+     "days":"5",
+     "months":"April",
+     "years":"2018",
+     "firstName": "gio",
+     "lastName":"todua",
+     "company":"academy",
+     "address":"cademy1234",
+     "address2":"cademy1223",
+     "country":"Canada",
+     "state":"toronto",
+     "city":"toto",
+     "zipcode":"2314",
+     "mobileNumber":"1234141",
+
+     "signupForm":"New User Signup!",
+     "acc":"Account Created!",
+     "logged":"Logged in as gio",
+     "accdel":"Account Deleted!",
+     "incorrect":"Your email or password is incorrect!"
+}
