@@ -1,0 +1,35 @@
+ import gt from '../fixtures/test.json'
+ 
+ describe('GR avtomation registrtion', () => {
+   it('swori monacemebit registracia', () => {
+     cy.visit('https://automationexercise.com/login')
+     cy.get('.signup-form > h2').should("have.text", "New User Signup!")
+     cy.get('[data-qa="signup-name"]').type(gt['signup-name'])
+     cy.get('[data-qa="signup-email"]').type(gt['signup-email'])
+     cy.get('[data-qa="signup-button"]').click()
+     cy.get('#id_gender1').check()        /*radio baTonze check-ic musaobs da click-ic(cy.get('#id_gender1').click())*/
+     cy.get('[data-qa="password"]').type(gt.password)
+     cy.get('[data-qa="days"]').select(5)
+     cy.get('[data-qa="months"]').select("April")
+     cy.get('[data-qa="years"]').select("2018")
+     cy.get('#newsletter').check()
+     cy.get('#optin').check()
+     cy.get('[data-qa="first_name"]').type('gio')
+     cy.get('[data-qa="last_name"]').type("todua")
+     cy.get('[data-qa="company"]').type("academy")
+     cy.get('[data-qa="address"]').type("cademy1234")
+     cy.get('[data-qa="address2"]').type("cademy1223")
+     cy.get('[data-qa="country"]').select("Canada")
+     cy.get('[data-qa="state"]').type("toronto")
+     cy.get('[data-qa="city"]').type("to")
+     cy.get('[data-qa="zipcode"]').type("2314")
+     cy.get('[data-qa="mobile_number"]').type("1234141")
+     cy.get('[data-qa="create-account"]').click()
+     cy.get('b').should("have.text", "Account Created!")
+     cy.get('[data-qa="continue-button"]').click()
+     /*cy.get(':nth-child(10) > a').should("have.text", "Logged in as gio")*/
+     cy.get('.shop-menu > .nav > :nth-child(5) > a').click()
+     cy.get('b').should("have.text", "Account Deleted!")
+     cy.get('[data-qa="continue-button"]').click()
+   })
+ }) 
